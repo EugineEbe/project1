@@ -1,4 +1,5 @@
 import express from "express";
+import movieRoutes from "./routes/movies.route.js"
 
 const app = express()
 
@@ -8,22 +9,7 @@ app.get('/', (req, res) =>{
     res.json({msg: "Hello All"})
 }) 
 
-
-app.get('/movies', ()=>{
-
-})
-
-app.post('/movies', ()=>{
-
-})
-
-app.put('/movies/:id', ()=>{
-
-})
-
-app.delete('/movies/:id', ()=>{
-
-})
+app.use('/movies', movieRoutes);
 
 
 app.listen(Port, () =>{

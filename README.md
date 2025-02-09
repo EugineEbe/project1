@@ -7,3 +7,5 @@
 5.`git add .`
 6.`git commit -m "any msg"`
 7.`git push -u origin main` or `git push`
+8.`node main.js`
+9.`npm run server` after installing nodemon.
